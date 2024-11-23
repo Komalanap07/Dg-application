@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # dg
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Dg-application
+>>>>>>> d0f1d61eac2eac89c76cf2628ac11f74c65c4900
