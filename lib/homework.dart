@@ -1,5 +1,6 @@
 import 'package:dgapk/Dashboard2.dart';
 import 'package:flutter/material.dart';
+import 'eng_homework.dart';
 
 class Homework extends StatefulWidget {
   const Homework({super.key});
@@ -59,27 +60,38 @@ class _HomeworkState extends State<Homework> {
               mainAxisSpacing: 10,
               crossAxisSpacing: 10,
               children: [
-                Card(
-                  child: Column(
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.only(top: 20),
-                          child: Image.asset(
-                            'assets/Homework/ABC.png',
-                            fit: BoxFit.cover,
+                InkWell(
+                  onTap: () {
+   
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => sub_homework()),
+    );
+  },
+                  
+                  child: Card(
+                    
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 20),
+                            child: Image.asset(
+                              'assets/Homework/ABC.png',
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          'English',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w500, fontSize: 16),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 20.0),
+                          child: Text(
+                            'English',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500, fontSize: 16),
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
                 Card(
