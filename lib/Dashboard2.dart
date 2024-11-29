@@ -2,7 +2,9 @@
 
 import 'package:dgapk/Syllabus.dart';
 import 'package:dgapk/homework.dart';
+import 'package:dgapk/logout.dart';
 import 'package:dgapk/profile.dart';
+import 'package:dgapk/settings.dart';
 
 import 'package:flutter/material.dart';
 
@@ -68,7 +70,10 @@ class _DashState extends State<Dash> {
                   leading: const Icon(Icons.settings, size: (30)),
                   title: const Text('Setting'),
                   onTap: () {
-                    Navigator.pop(context);
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => settings()),
+                      );
                   },
                 ),
               ),
@@ -77,7 +82,10 @@ class _DashState extends State<Dash> {
                   leading: const Icon(Icons.logout, size: (30)),
                   title: const Text('Logout'),
                   onTap: () {
-                    Navigator.pop(context);
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Logout()),
+                      );
                   },
                 ),
               ),
