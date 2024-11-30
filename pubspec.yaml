@@ -27,14 +27,22 @@ environment:
 # dependencies can be manually updated by changing the version numbers below to
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
+# dependencies:
+#   flutter:
+#     sdk: flutter
+#     table_calendar: ^3.0.0
 dependencies:
   flutter:
     sdk: flutter
+  table_calendar: ^3.0.0
+  cupertino_icons: ^1.0.8
+
+# Additional dependencies or configuration can be placed here.
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.8
+ 
 
 dev_dependencies:
   flutter_test:

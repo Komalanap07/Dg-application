@@ -1,12 +1,14 @@
 
-
+import 'package:flutter/material.dart';
 import 'package:dgapk/Syllabus.dart';
 import 'package:dgapk/homework.dart';
 import 'package:dgapk/logout.dart';
 import 'package:dgapk/profile.dart';
 import 'package:dgapk/settings.dart';
+import 'package:dgapk/stud_attendence.dart';
+import 'package:dgapk/feedback.dart';
 
-import 'package:flutter/material.dart';
+
 
 class Dash extends StatefulWidget {
   const Dash({super.key});
@@ -243,12 +245,20 @@ class _DashState extends State<Dash> {
                 Card(
                   child: Column(
                     children: [
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.only(top: 20),
-                          child: Image.asset(
-                            'assets/tablet for papers.png',
-                            fit: BoxFit.cover,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) =>StudAttendance()),
+                          );
+                        },
+                        child: Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 20),
+                            child: Image.asset(
+                              'assets/tablet for papers.png',
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
@@ -335,12 +345,21 @@ class _DashState extends State<Dash> {
                 Card(
                   child: Column(
                     children: [
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.only(top: 20),
-                          child: Image.asset(
-                            'assets/User feedback.png',
-                            fit: BoxFit.cover,
+                      InkWell(
+                        onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => feedback()),
+                            );
+                          },
+                        child: Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 20),
+                            child: Image.asset(
+                              'assets/User feedback.png',
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
